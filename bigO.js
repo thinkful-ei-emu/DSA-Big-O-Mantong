@@ -95,3 +95,22 @@ function efficientSearch(array, item) {
     return -1;
 }
 
+//O(log(n)) Logarithmic time , they cut the problem size into half each time.
+
+//9. Random element
+function findRandomElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+//O(1) constant runtime. find a random number in an array
+//10. What Am I?
+function isWhat(n) {
+    if (n < 2 || n % 1 != 0) {
+        return false;
+    }
+    for (let i = 2; i < n; ++i) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+//O(n) linear check if n is divisible by i
+
